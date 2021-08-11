@@ -5,6 +5,10 @@ const token = process.env.BEARER_TOKEN;
 // const endpointURL = "https://api.twitter.com/2/users/by?usernames="
 const endpointURL = "https://api.twitter.com/2/users/by/username/"
 
+exports.splashMessage = (res) => {
+    res.send('Application Running');
+}
+
 exports.findUser =  async (req, res) => {
   try {
       // Make request
